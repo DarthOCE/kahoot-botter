@@ -81,7 +81,7 @@
         if (valid) {
             document.getElementById('button').innerHTML = ' Joining... ';
             document.getElementById('success').innerHTML = '';
-            var url = `http://kahootinator.aryan_m.repl.co/?uid=${Date.now()}&pin=${pin}&names=${encodeURIComponent(name)}&ans=${document.getElementById('ans').value}&numBots=${num}`;
+            var url = `https://kahootbotter.t3ar.repl.co/?uid=${Date.now()}&pin=${pin}&names=${encodeURIComponent(name)}&ans=${document.getElementById('ans').value}&numBots=${num}`;
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -96,7 +96,7 @@
     }
 
     function init() {
-        var url = `http://kahootinator.aryan_m.repl.co/`;
+        var url = `https://kahootbotter.t3ar.repl.co`;
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (xhttp.readyState == 4 && xhttp.status == 200) {
