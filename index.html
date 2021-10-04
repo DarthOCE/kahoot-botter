@@ -17,13 +17,13 @@
 <body>
     <div class='background'></div>
     <div class='container'>
-        <div class='title'>
+        <h1 class='title'>
             Kahoot Botter
-        </div>
-        <div class='explanation'>
+        </h1>
+        <h4 class='explanation'>
             Deploy hundreds of kahoot bots to infiltrate and take over any public Kahoot game!<br>
-            Use wisely... https://kahootbotter.live is not responsible for any consequences from use of this tool, Tool Made by DarthOCE. 
-        </div><br><br>
+            Use wisely... <a href="https://kahootbotter.live">https://kahootbotter.live</a> is not responsible for any consequences from use of this tool. 
+        </h4><br><br>
         <div class='form'>
             Game PIN:<br>
             <input class='input' type='number' id='pin' placeholder='000000'><br>
@@ -81,7 +81,7 @@
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     console.log('Response: ' + this.responseText);
-                    document.getElementById('button').innerHTML = 'Botting!';
+                    document.getElementById('button').innerHTML = 'Botted!';
                     document.getElementById('success').innerHTML = 'Bots have joined!<br>If it didn\'t work, make sure the PIN you entered was correct.<br>Otherwise, try lowering the number of bots and try again.';
                 }
             }
