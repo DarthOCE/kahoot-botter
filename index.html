@@ -30,7 +30,7 @@
             <span class='error' id='pinError'></span><br>
             Bot Names, separated by commas:<br>
             (Each bot will choose a random one of these names)<br>
-            <input class='input' type='text' id='name' placeholder='DarthOCE, Botted' value='DarthOCE, Botted'><br>
+            <input class='input' type='text' id='name' placeholder='Botted by DarthOCE, DarthOCE' value='Botted by DarthOCE, DarthOCE'><br>
             <span class='error' id='nameError'></span><br>
 
             <label for="ans">Bot will answer: </label><br>
@@ -45,6 +45,7 @@
             <span class='error' id='numError'></span><br>
             <button class='button' onclick="go()" id="button">Bot the Kahoot!</button><br>
             <span id='success' class='success'></span>
+            <h5 class="credits">Made by DarthOCE</h5>
         </div>
     </div>
 
@@ -85,7 +86,7 @@
                     document.getElementById('success').innerHTML = 'Bots have joined!<br>If it didn\'t work, make sure the PIN you entered was correct.<br>Otherwise, try lowering the number of bots and try again.';
                 }
             }
-            xhttp.open("GET", url, true); // true for asynchronous 
+            xhttp.open("GET", url, true);  
             xhttp.send();
         }
     }
@@ -98,7 +99,7 @@
                     console.log('REPL woken up');
                 }
             }
-            xhttp.open("GET", url, true); // true for asynchronous 
+            xhttp.open("GET", url, true); 
             xhttp.send();
     }
     init();
