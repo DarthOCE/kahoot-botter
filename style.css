@@ -1,9 +1,21 @@
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
 .container {
     padding: 30px;
     background-color: transparent;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
 .background {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
     z-index: -1;
     opacity: 1.0;
     background-color: #202020;
@@ -26,6 +38,10 @@
     .title {
         font-size: 8vw;
     }
+}
+
+.navbar.navbar-inverse{
+    border-radius: 12px;
 }
 
 .explanation {
@@ -55,6 +71,13 @@
     color: #202020;
     text-align: center;
     padding: 10px;
+    opacity: 0.77;
+    border: none;
+    border-radius: 11px;
+}
+
+.input:focus{
+    opacity: 1;
 }
 
 #numBots {
@@ -70,7 +93,14 @@
     background-color: #202020;
     color: white;
     border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 11px;
     box-shadow: -0.5px -0.5px 2px 2px gray;
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+    background: #474747;
 }
 
 .button:active {
@@ -82,4 +112,16 @@
 
 .button:focus {
     outline: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
